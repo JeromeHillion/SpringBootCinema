@@ -1,0 +1,81 @@
+body{
+    background-color: #fff !important;
+}
+
+.nav_menu{
+    background-color: #007F71 !important;
+    padding: 5px !important;
+    border-radius: 0 !important;
+}
+.nav_menu>h1{
+    text-align: center !important;
+    color: #E0E0E0 !important;
+    margin-left: 655px !important;
+}
+.cine_menu{
+    visibility: hidden !important;
+}
+.down{
+    cursor: pointer;
+
+}
+
+
+
+.field>input{
+    padding: 10px !important;
+}
+
+.grid>h1{
+    background-color: #00b6a2;
+    font-size: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.grid>.ui{
+    background-color: #fff !important;
+    border-radius: 0 !important;
+
+}
+.titre{
+    text-align: center !important;
+}
+
+.menu_title{
+    color: #00B6A2;
+}
+.champtitre{
+    color: #00B6A2 !important;
+}
+
+.item{
+    color:  #757575 !important;;
+}
+.item:hover{
+   color: #212121 !important;
+}
+.input_inser_details{
+    color:#757575 !important;
+    padding: 5px !important;
+    border-bottom: 1px solid!important;
+    margin-top: 10px !important;
+    font-size: 15px !important;
+}
+.vertical{
+    background-color: #EEEEEE !important;
+}
+.header{
+  color: #00b6a2;
+}
+.input_ajt_film{
+    color: #00B6A2 !important;
+    border-bottom: 1px solid !important;
+    font-size: 18px !important;
+    padding: 5px !important;
+}
+.ui form{
+    margin-top: -150px;
+}

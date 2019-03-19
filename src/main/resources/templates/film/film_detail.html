@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org"> 
+<head>
+    <meta charset="UTF-8">
+    <th:block th:insert="fragments/head.html :: head"> </th:block>
+    <link href="../static/css/film_detail.css" th:href="@{/css/film_detail.css}" rel="stylesheet">
+
+    <title>Title</title>
+    
+</head>
+<body th:each="film : ${film}">
+<!-- Page Contents -->
+<div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment">
+
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item">
+                    <cite id="titre">CINEMAN</cite>
+                </a>
+                <a th:href="@{/}" class=" item">Accueil</a>
+                <a  th:href="@{/film_list}" class="item">Films</a>
+                <a th:href="@{/actor_list}" id="acteurs" class="item">Acteurs</a>
+                <a th:href="@{/film_form}" class="item">Ajout de films</a>
+                <div class="right item">
+                    <a class="ui inverted teal button">S'identifier</a>
+                    <a style="margin-left: 10px;" class="ui inverted teal button">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="ui horizontal divider header"><i class="play circle outline icon"></i>Détails du film</h3>
+
+<div class="ui items">
+    <div class="item">
+        <div class="image">
+            <img  th:src="'/images/affiches/'+${film.imagePath}">
+        </div>
+        <div class="content">
+           <h1><a th:text="${film.title}" class="header">En-tête</a></h1>
+            <div class="meta">
+              <h3> Réalisateur : <span th:text="${film.director.givenname} +' '+ ${film.director.surname}">Description</span> </h3>
+            </div>
+            <div  class="extra"> <h4> <span id="acteur_principaux"> Acteurs principaux :</span> <a href="#"><span th:each="play : ${film.roles}" th:text="${play.actor.givenname} +' '+ ${play.actor.surname}+', '"></span></a></h4></span> </div>
+            <div  class="extra"><h4> <span id="genre">Genre :</span> <span th:each="genre :${film.genres}" th:text="${genre.name}+', '"> , </span></h4></div>
+            <br>
+            <div class="description">
+                <h3 class="ui horizontal divider header"><i class="play circle outline icon"></i>Résumé du film</h3>
+                <p th:text="${film.summary}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius et modi quisquam ratione! Asperiores corporis, cum, doloribus enim error esse eum ex fuga id minima pariatur, possimus quaerat ratione veritatis?</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

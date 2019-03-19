@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="webjars/Semantic-UI/2.4.1/semantic.css">
+    <link href="../static/css/film_form.css" th:href="@{/css/film_form.css}" rel="stylesheet">
+
+    <title>Title</title>
+</head>
+<body>
+<!--<div>
+<div class="ui menu">
+    <a class="browse item active">Cinema <i class="dropdown icon"></i> </a>
+</div>
+    <div class="ui fluid popup top left transition hidden" style="top: auto; left: 1px; bottom: 83px; right: auto; width: 744px;">
+    <div class="ui four column relaxed equal height divided grid">
+        <div class="column">
+            <h4 class="ui header">Films</h4>
+            <div class="ui link list">
+                <a class="item">Rôles</a>
+                <a class="item">Genres</a>
+                <a class="item">Se connecter</a>
+                <a class="item">S'inscire</a>
+            </div>
+        </div>
+        <div class="column">
+            <h4 class="ui header">Taille</h4>
+            <div class="ui link list">
+                <a class="item">Petit</a>
+                <a class="item">Moyen</a>
+                <a class="item">Grand</a>
+                <a class="item">Plus Sizes</a>
+            </div>
+        </div>
+        <div class="column">
+            <h4 class="ui header">Coloré</h4>
+            <div class="ui link list">
+                <a class="item">Neutrals</a>
+                <a class="item">Brights</a>
+                <a class="item">Pastels</a>
+            </div>
+        </div>
+        <div class="column">
+            <h4 class="ui header">Types</h4>
+            <div class="ui link list">
+                <a class="item">Knitwear</a>
+                <a class="item">Outerwear</a>
+                <a class="item">Pants</a>
+                <a class="item">Shoes</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<div class="ui grid">
+<div class="ui vertical menu">
+    <div class="item">
+        <div class="header">Films</div>
+        <div class="menu">
+            <a class="item">Ajouter un film</a>
+            <a class="item">Gérer les films</a>
+            <a class="item">Gérer les affiches</a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="header">Rôles</div>
+        <div class="menu">
+            <a class="item">Ajouter un rôles</a>
+            <a class="item">Gérer les rôles</a>
+
+        </div>
+    </div>
+    <div class="item">
+        <div class="header">Genres</div>
+        <div class="menu">
+            <a class="item">Ajouter un genre</a>
+            <a class="item">Gérer les genres</a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="header">Utilisateurs</div>
+        <div class="menu">
+            <a class="item">Admin</a>
+            <a class="item">Clients</a>
+        </div>
+    </div>
+</div>-->
+
+            <!--<div class="ui accordion">
+                <div class="title  transition visible " >
+                    <i class="dropdown icon"></i>
+                    Films
+                </div>
+                <div class="content">
+                    <div class="ui middle aligned animated list transition hidden">
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Ajouter un film</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Liste des films</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Affiches</a></div>
+                            </div>
+                        </div>
+                    </div>    </div>
+                <div class="title  transition visible " >
+                    <i class="dropdown icon"></i>
+                    Genre
+                </div>
+                <div class="content">
+                    <div class="ui middle aligned animated list transition hidden">
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Ajouter un genre</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Liste des genre</a></div>
+                            </div>
+                        </div>
+                    </div>    </div>
+                <div class="title  transition visible " >
+                    <i class="dropdown icon"></i>
+                    Role
+                </div>
+                <div class="content">
+                    <div class="ui middle aligned animated list transition hidden">
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Ajouter un role</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Liste des roles</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Photos</a></div>
+                            </div>
+                        </div>
+                    </div>    </div>-->
+          <!--      <div class="title  transition visible " >
+                    <i class="dropdown icon"></i>
+                    Compte utilisateur
+                </div>
+                <div class="content">
+                    <div class="ui middle aligned animated list transition hidden">
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Inscription</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header"><a class="item">Connexion</a></div>
+                            </div>
+                        </div>
+                    </div>    </div>
+        </div>
+
+    <div class="twelve wide stretched column">-->
+
+        <div class="grid">
+
+            <h1 class="ui dividing header input_ajt_film">Ajouter un film</h1>
+            <h2 class="ui dividing header input_inser_details">Inserer les détails du film</h2>
+        </div>
+       <!--<form class="ui form"  action="#"
+              class="ui form"
+              id="film-form"
+              method="post"
+              th:action="@{/film/add}"
+              th:object="${film}">
+            <div class="two fields">
+                <div class="field">
+                    <label>Titre</label>
+                    <input placeholder="titre ..." name="name" type="text">
+                </div>
+                <div class="field">
+                    <label>Note</label>
+                    <input type="number">
+                </div>
+                <label>Résumé</label>
+                <textarea form="film-form" rows="5" th:field="*{summary}"></textarea>
+            </div>
+            <input class="ui button" type="submit" value="Valider">
+
+        </form>-->
+        <!--<div class="field">
+                <label>Titre</label>
+                <div class="two fields">
+
+                        <input type="text" class="champtitre" name="shipping[first-name]" placeholder="First Name">
+    </div>
+            </div>
+                    <div class="field">
+                        <label> Date de sortie</label>
+                        <div class="two fields">
+                        <input type="text" class="champdate" name="shipping[first-name]" placeholder="First Name">
+    </div>
+                    </div>
+            <div class="field">
+                <label> Réalisateur</label>
+                <div class="two fields">
+                    <input type="text" class="champreal" name="shipping[first-name]" placeholder="First Name">
+                </div>
+            </div>
+            <div class="field">
+                <label> Genre</label>
+                <div class="two fields">
+                    <select class="ui fluid dropdown champgenre">
+                        <option value="">genre</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="field">
+                <label> Affiche</label>
+                <div class="two fields">
+                    <input type="file" class="champtitre" name="shipping[first-name]" placeholder="First Name">
+                </div>
+            </div>
+            <div class="field">
+                <label> Note</label>
+                <div class="two fields">
+                    <input type="number" class="champtitre" name="shipping[first-name]" placeholder="First Name">
+                </div>
+            </div>
+            <div class="field">
+                <label> Résumé du film</label>
+                <div class="two fields">
+                    <textarea  class="champtitre" name="shipping[first-name]" placeholder="First Name"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="two fields">
+                    <button class="ui teal button">Ajouter</button>
+            </div>
+            </div>
+        </form>&ndash;&gt;-->
+    </div>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+<script>
+    $('.ui.accordion')
+        .accordion()
+    ;
+    $('.trigger.example .accordion')
+        .accordion({
+            selector: {
+                trigger: '.title .icon'
+            }
+        })
+    ;
+</script>
+<script type="application/javascript">
+    $('#menu-films').addClass("active");
+    $('.ui.dropdown').dropdown();
+    $(document).ready(function () {
+        tinymce.init({
+            selector: '#summary'
+        });
+    })
+            </script>
+</body>
+</html>
